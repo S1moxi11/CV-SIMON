@@ -1,8 +1,78 @@
+body {
+    background-image: url("../IMG/fond.jpg");
+    background-size: 100% 100% ; 
+
+}
+
 h1 {
-    color: rgb(0, 140, 255);
-    font-size: 30px;
+    color: rgb(117, 117, 117);
+    font-size: 20px;
 }
 
 h2 {
-    color: rgb(0, 204, 255);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+}
+
+h3 {
+    text-align:end;
+    margin-right: 50px;
+    font-size: 50px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex; 
+    flex-direction: column;
+    width: 40%; 
+    margin: 5px;
+
+}
+
+section {
+    width: 95%;
+    margin: 15px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Conteneur pour l'image et le texte */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Image */
+.left-container img {
+    height: 30%;
+    width: 30%;
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+    margin-left: 5%;
+}
+
+
+/* Ajouter du style aux informations sous l'image */
+.left-container ul {
+    margin-left: 2%;
+}
+
+.left-container li {
+    margin-bottom: 5px;
+}
+
+/* Ajouter du style au nom */
+.right-container h3 {
+    margin: 0;
+    margin-right: 80%;
 }
